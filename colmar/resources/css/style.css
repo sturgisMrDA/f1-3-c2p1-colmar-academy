@@ -1,0 +1,271 @@
+/* Custom fonts */
+@font-face {
+  font-family: "Calculative";
+  src: url(../fonts/Calculative.ttf) format('truetype');
+}
+
+/* Universal styles */
+html {
+  font-size: 16px;
+  background-color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  line-height: 1.2;
+}
+
+p {
+    font-family: "Calculative", serif;
+    font-size: 1rem;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  margin: 0.5rem;
+}
+
+.mobile {
+  display: none;
+}
+
+.container,
+.headline {
+  display: flex;
+}
+
+section,
+.feature,
+.sidebar,
+.headline-text {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h5 {
+  text-transform: uppercase;
+}
+
+h6 {
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: #252525;
+}
+
+/* Header section */
+.logo-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 1.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.logo strong {
+  font-weight: bold;
+}
+
+.banner {
+  background-color: #BBBBBB;
+}
+
+.banner .sidebar {
+  justify-content: center;
+  max-width: 270px;
+}
+
+.banner h3 {
+  margin: 2rem 0;
+}
+
+.button {
+  background-color: #505050;
+  padding: 0.5rem;
+  text-align: center;
+  color: #EEEEEE;
+}
+
+/* Main section */
+.feature {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.sidebar {
+  width: 40%
+}
+
+.programs h2,
+.thesis h2 {
+  text-align: center;
+}
+
+/* News section */
+.news {
+  background-color: #EEEEEE;
+}
+
+.news .headline:last-child,
+.thesis .headline:first-child {
+  background-color: #BBBBBB;
+}
+
+.news .headline:first-child {
+  padding-top: 1rem;
+}
+
+.news h2 {
+  margin-top: 2rem;
+}
+
+.news .feature p {
+  margin: 1.5rem 0;
+}
+
+.headline {
+  border: 1px solid #DDDDDD;
+}
+
+.headline-img {
+  width: 35%;
+  margin: 1rem;
+}
+
+.headline img {
+  width: 100%;
+  height: auto;
+}
+
+.headline-text {
+  width: 65%;
+  justify-content: center;
+}
+
+.headline a {
+  color: blue;
+}
+
+.headline p {
+  margin: 0.5rem 0;
+}
+
+/* Course offerings section */
+.programs {
+  background-color: #BBBBBB;
+  padding: 2rem 3.5rem;
+}
+
+.programs .container {
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.program {
+  max-width: 29%;
+  background-color: white;
+  margin: 1rem;
+}
+@media only screen and (max-width: 875px) {
+  .program {
+    max-width: 40%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner h3 {
+    font-size: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .banner .sidebar {
+    max-width: 160px;
+  }
+/*
+  .banner .container {
+    flex-direction: column;
+  }
+
+  .banner .sidebar {
+    max-width: none;
+    width: 100%;
+  }
+
+  .banner .feature {
+    width: 100%;
+  }
+
+}
+*/
+.program-text {
+  padding: 1rem;
+}
+
+.program h5 {
+  margin: 0.5rem 0;
+}
+
+/* Thesis section */
+
+.thesis {
+  background-color: #EEEEEE;
+  padding-top: 2rem;
+
+}
+
+.thesis video {
+  width: 100%;
+  height: auto;
+}
+
+.thesis .sidebar {
+  margin-top: 2rem;
+}
+
+.thesis .feature h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer section */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #EEEEEE;
+  border-top: 1px solid #DDDDDD;
+  padding: 1rem 1.5rem;
+}
